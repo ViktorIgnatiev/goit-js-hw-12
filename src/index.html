@@ -4,25 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Search App</title>
-  <link rel="stylesheet" href="/src/css/styles.css">
+  <title>Image Search</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <header class="header">
-    <form class="search-form">
-      <input type="text" name="searchQuery" placeholder="Search images..." required>
-      <button type="submit">Search</button>
-    </form>
-  </header>
+  <div class="container">
+    <header class="header">
+      <form class="search-form" id="search-form">
+        <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." required />
+        <button type="submit">Search</button>
+      </form>
+    </header>
 
-  <div class="loader-container"></div>
-
-  <div class="gallery-container">
-    <ul class="gallery"></ul>
+    <main>
+      <div class="gallery-container">
+        <ul class="gallery"></ul>
+        <div class="loader"></div>
+        <button type="button" class="load-more">Load more</button>
+      </div>
+    </main>
   </div>
 
-  <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="./main.js"></script>
 </body>
 
 </html>
