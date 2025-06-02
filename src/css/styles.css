@@ -32,13 +32,13 @@ body {
   z-index: 100;
 }
 
-.search-form {
+.form {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.search-form input {
+.form input {
   width: 300px;
   padding: 10px;
   border: none;
@@ -46,7 +46,7 @@ body {
   font-size: 16px;
 }
 
-.search-form button {
+.form button {
   padding: 10px 20px;
   background-color: #ff6b08;
   color: white;
@@ -57,7 +57,7 @@ body {
   transition: background-color 0.3s;
 }
 
-.search-form button:hover {
+.form button:hover {
   background-color: #ff8c00;
 }
 
