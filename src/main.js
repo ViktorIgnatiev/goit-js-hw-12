@@ -1,6 +1,5 @@
 import { getImagesByQuery } from './js/pixabay-api';
 import {
-  initGallery,
   createGallery,
   clearGallery,
   showLoader,
@@ -11,9 +10,9 @@ import {
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-// Initialize gallery when DOM is loaded
+
 document.addEventListener('DOMContentLoaded', () => {
-  initGallery();
+  hideLoadMoreButton();
   setupEventListeners();
 });
 
